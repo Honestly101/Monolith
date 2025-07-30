@@ -93,6 +93,39 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
+# Mercenary Cyborg China Lake
+- type: entity
+  name: PA Cyborg china lake
+  parent: [ BaseItem, BaseC3Contraband ]
+  id: WeaponMercenaryChinaLake
+  description: A china lake for use by cyborgs, redesigned for mercenary use. Creates 40mm grenade shells on the fly from an internal ammo fabricator, which slowly self-charges.
+  components:
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: ProjectileBatteryAmmoProvider
+    proto: 40mmGrenadeFragmentation
+    fireCost: 100
+  - type: Battery
+    maxCharge: 300
+    startingCharge: 300
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 1
+  - type: AmmoCounter
+
 - type: entity
   name: PA RPG-7
   parent: [ BaseWeaponLauncher, BaseC3Contraband ] # Frontier: BaseMajorContraband<BaseC3Contraband

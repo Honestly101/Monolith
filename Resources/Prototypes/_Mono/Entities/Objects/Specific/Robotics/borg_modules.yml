@@ -1,0 +1,123 @@
+- type: entity
+  id: BaseBorgModuleMercenary
+  parent: BaseBorgModule
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Mono/Objects/Specific/Robotics/borgmodule.rsi
+    - type: Tag
+      tags:
+        - BorgModuleMercenary
+
+- type: entity
+  id: BorgModuleMercenary
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name: basic mercenary cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: Mercenary
+    items:
+    - Machete
+    - WeaponPistolMercenaryEchis
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: mercenary-weapon-module }
+
+- type: entity
+  id: BorgModuleVulcan
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name:  FCM-C Vulcan cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: Vulcan
+    items:
+    - WeaponMercenaryVulcan
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: vulcan-weapon-module }
+
+- type: entity
+  id: BorgModuleEnforcer
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name:  Enforcer cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: Enforcer
+    items:
+    - WeaponMercenaryEnforcer
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: enforcer-weapon-module }
+
+- type: entity
+  id: BorgModuleBigJohnny
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name:  Big Johnny cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: BigJohnny
+    items:
+    - WeaponMercenaryBigJohnny
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: bigjohnny-weapon-module }
+
+- type: entity
+  id: BorgModuleVector
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name:  LWC Vector cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: Vector
+    items:
+    - WeaponMercenaryVector
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: vector-weapon-module }
+
+- type: entity
+  id: BorgModuleChinaLake
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name:  china lake cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: ChinaLake
+    items:
+    - WeaponMercenaryChinaLake
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: chinalake-weapon-module }
+
+- type: entity
+  id: BorgModuleBreacher
+  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
+  name:  breacher cyborg module
+  components:
+  - type: Sprite
+    layers:
+    - state: mercenary
+    - state: icon-mercenary
+  - type: ItemBorgModule
+    moduleId: Breacher
+    items:
+    - CyborgBreachingHammer
+  - type: BorgModuleIcon
+    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: breacher-weapon-module }

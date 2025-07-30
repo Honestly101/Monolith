@@ -169,3 +169,51 @@
   - type: LaserPointer
     targetedColor: "#FF0000"
     defaultColor: "#FF0000"
+
+# Mercenary Cyborg Vulcan
+- type: entity
+  name: LMC Cyborg Vector (.45 ACP)
+  parent: [ BaseItem, BaseC2Contraband ]
+  id: WeaponMercenaryVector
+  description: A LWC Vector for use by cyborgs, redesigned for mercenary use. Creates .45 ACP on the fly from an internal ammo fabricator, which slowly self-charges.
+  components:
+  - type: Gun
+    minAngle: 0
+    maxAngle: 11
+    angleIncrease: 3
+    angleDecay: 16
+    fireRate: 6
+    burstCooldown: 0.5
+    burstFireRate: 14
+    shotsPerBurst: 3
+    projectileSpeed: 50 # Mono
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/SMGs/vector.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: ProjectileBatteryAmmoProvider
+    proto: Cartridge45_ACPFMJ
+    fireCost: 100
+  - type: Battery
+    maxCharge: 3100
+    startingCharge: 3100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: AmmoCounter
+  - type: LaserPointer
+    targetedColor: "#FF0000"
+    defaultColor: "#FF0000"

@@ -1,0 +1,59 @@
+# DO NOT use this as an actual species, its for borg part appearance to Just Work
+- type: species
+  id: MercenaryCyborg
+  name: species-name-human
+  roundStart: false
+  prototype: BorgChassisMercenary
+  sprites: CyborgSprites
+  defaultSkinTone: "#fff9e2"
+  markingLimits: MobHumanMarkingLimits
+  maleFirstNames: names_borg
+  femaleFirstNames: names_borg
+  dollPrototype: BorgChassisMercenary
+  skinColoration: TintedHues
+
+- type: speciesBaseSprites
+  id: MercenaryCyborgSprites
+  sprites:
+    Head: MercCyborgHead
+    Chest: MercCyborgTorso
+    LArm: MercCyborgLArm
+    RArm: MercCyborgRArm
+    LLeg: MercCyborgLLeg
+    RLeg: MercCyborgRLeg
+
+- type: humanoidBaseSprite
+  id: MercCyborgHead
+  baseSprite:
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    state: merc_sec_head
+
+- type: humanoidBaseSprite
+  id: MercCyborgTorso
+  baseSprite:
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    state: merc_sec_chest
+
+- type: humanoidBaseSprite
+  id: MercCyborgLLeg
+  baseSprite:
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    state: merc_sec_l_leg
+
+- type: humanoidBaseSprite
+  id: MercCyborgLArm
+  baseSprite:
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    state: merc_sec_l_arm
+
+- type: humanoidBaseSprite
+  id: MercCyborgRLeg
+  baseSprite:
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    state: merc_sec_r_leg
+
+- type: humanoidBaseSprite
+  id: MercCyborgRArm
+  baseSprite:
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    state: merc_sec_r_arm

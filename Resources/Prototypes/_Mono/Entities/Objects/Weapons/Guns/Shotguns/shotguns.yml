@@ -72,3 +72,42 @@
   - type: LaserPointer
     targetedColor: "#FF0000"
     defaultColor: "#FF0000"
+
+# Mercenary Cyborg Big Johnny
+- type: entity
+  name: Cyborg Big Johnny (4 gauge)
+  parent: [ BaseItem, BaseC1Contraband ]
+  id: WeaponMercenaryBigJohnny
+  description: A Big Johnny for use by cyborgs, redesigned for mercenary use. Creates 4 gauge shells on the fly from an internal ammo fabricator, which slowly self-charges.
+  components:
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/BigJohnny.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: ProjectileBatteryAmmoProvider
+    proto: ShellShotgun23x75mmBuckshot
+    fireCost: 100
+  - type: Battery
+    maxCharge: 300
+    startingCharge: 300
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+  - type: AmmoCounter
+  - type: LaserPointer
+    targetedColor: "#FF0000"
+    defaultColor: "#FF0000"

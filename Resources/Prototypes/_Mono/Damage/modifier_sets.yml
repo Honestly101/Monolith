@@ -24,3 +24,13 @@
     Blunt: 0.6
     Slash: 0.7
     Piercing: 0.7
+
+- type: damageModifierSet # Mono
+  id: BorgChassisMercenary
+  coefficients:
+    Heat: 1.5
+    Cold: 0
+    Shock: 2.5
+    Blunt: 0.4
+    Slash: 0.5
+    Piercing: 0.5

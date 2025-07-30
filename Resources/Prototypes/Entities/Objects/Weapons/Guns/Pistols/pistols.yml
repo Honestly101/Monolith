@@ -200,6 +200,7 @@
   components:
   - type: Gun
     fireRate: 5
+    projectileSpeed: 40 # Mono
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto

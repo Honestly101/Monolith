@@ -1,0 +1,93 @@
+- type: entity
+  abstract: true
+  parent: PartSiliconBase
+  id: PartSiliconMerc
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+  - type: Icon
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+
+- type: entity
+  parent: [ PartSiliconMerc, BaseLeftArm ]
+  id: LeftArmMercBorg
+  name: mercenary cyborg left arm
+  components:
+  - type: Sprite
+    state: merc_sec_l_arm
+  - type: Icon
+    state: merc_sec_l_arm
+  - type: Tag
+    tags:
+    - Trash
+    - MercBorgLArm
+
+- type: entity
+  parent: [ PartSiliconMerc, BaseRightArm ]
+  id: RightArmMercBorg
+  name: mercenary cyborg right arm
+  components:
+  - type: Sprite
+    state: merc_sec_r_arm
+  - type: Icon
+    state: merc_sec_r_arm
+  - type: Tag
+    tags:
+    - Trash
+    - MercBorgRArm
+
+- type: entity
+  parent: [ PartSiliconMerc, BaseLeftLeg ]
+  id: LeftLegMercBorg
+  name: mercenary cyborg left leg
+  components:
+  - type: Sprite
+    state: merc_sec_l_leg
+  - type: Icon
+    state: merc_sec_l_leg
+  - type: Tag
+    tags:
+    - Trash
+    - MercBorgLLeg
+
+- type: entity
+  parent: [ PartSiliconMerc, BaseRightLeg ]
+  id: RightLegMercBorg
+  name: mercenary cyborg right leg
+  components:
+  - type: Sprite
+    state: merc_sec_r_leg
+  - type: Icon
+    state: merc_sec_r_leg
+  - type: Tag
+    tags:
+    - Trash
+    - MercBorgRLeg
+
+- type: entity
+  parent: [ PartSiliconMerc, BaseHead ]
+  id: LightHeadMercBorg
+  name: mercenary cyborg head
+  components:
+  - type: Sprite
+    state: merc_sec_head
+  - type: Icon
+    state: merc_sec_head
+  - type: Tag
+    tags:
+    - Trash
+    - MercBorgHead
+
+- type: entity
+  parent: [ PartSiliconMerc, BaseTorsoInorganic ]
+  id: TorsoMercBorg
+  name: mercenary cyborg torso
+  components:
+  - type: Sprite
+    state: merc_sec_chest
+  - type: Icon
+    state: merc_sec_chest
+  - type: Tag
+    tags:
+    - Trash
+    - MercBorgTorso

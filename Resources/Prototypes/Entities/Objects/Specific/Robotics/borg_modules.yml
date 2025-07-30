@@ -267,22 +267,23 @@
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }
 
-- type: entity
-  id: BorgModuleMercenary
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: mercenary cyborg module
-  components:
-  - type: Sprite
-    layers:
-    - state: syndicate
-    - state: icon-syndicate
-  - type: ItemBorgModule
-    moduleId: Mercenary
-    items:
-    - Machete
-    - WeaponPistolMercenaryEchis
-  - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }
+# commented out new location: \Monolith\Resources\Prototypes\_Mono\Entities\Objects\Specific\Robotics\borg_modules.yml
+#- type: entity
+#  id: BorgModuleMercenary
+#  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+#  name: mercenary cyborg module
+#  components:
+#  - type: Sprite
+#    layers:
+#    - state: syndicate
+#    - state: icon-syndicate
+#  - type: ItemBorgModule
+#    moduleId: Mercenary
+#    items:
+#    - Machete
+#    - WeaponPistolMercenaryEchis
+#  - type: BorgModuleIcon
+#    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }
 
 # cargo modules
 - type: entity
@@ -370,7 +371,7 @@
     - GasAnalyzer
     - GeigerCounter
     - MaintenanceJack # Frontier
-    - RPED
+    - RPED # Monolith
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-tools-module }
 

@@ -259,6 +259,42 @@
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBeanbag
 
+# Mercenary Cyborg Enforcer
+- type: entity
+  name: Cyborg Enforcer (12 gauge)
+  parent: [ BaseItem, BaseC2Contraband ]
+  id: WeaponMercenaryEnforcer
+  description: A Enforcer for use by cyborgs, redesigned for mercenary use. Creates 12 gauge shells on the fly from an internal ammo fabricator, which slowly self-charges.
+  components:
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 2.2
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: ProjectileBatteryAmmoProvider
+    proto: ShellShotgun12_gaugeBuckshot
+    fireCost: 100
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 800
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: AmmoCounter
+
 - type: entity
   name: Kammerer (12 gauge)
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable

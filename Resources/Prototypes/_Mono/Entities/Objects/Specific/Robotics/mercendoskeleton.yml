@@ -1,0 +1,81 @@
+- type: entity
+  id: MercenaryCyborgEndoskeleton
+  name: mercenary cyborg endoskeleton
+  description: A frame that mercenary cyborgs are built on. It's bulk is intimidating.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+        restitution: 0.3
+        friction: 0.2
+  - type: Sprite
+    noRot: true
+    drawdepth: Items
+    sprite: Objects/Specific/Robotics/cyborg_parts.rsi
+    state: robo_suit
+  - type: Appearance
+  - type: ItemMapper
+    sprite: _Mono/Objects/Specific/Robotics/cyborg_parts.rsi
+    mapLayers:
+      merc_sec_l_arm+o:
+        whitelist:
+          tags:
+          - MercBorgLArm
+      merc_sec_r_arm+o:
+        whitelist:
+          tags:
+          - MercBorgRArm
+      merc_sec_l_leg+o:
+        whitelist:
+          tags:
+          - MercBorgLLeg
+      merc_sec_r_leg+o:
+        whitelist:
+          tags:
+          - MercBorgRLeg
+      merc_sec_head+o:
+        whitelist:
+          tags:
+          - MercBorgHead
+      merc_sec_chest+o:
+        whitelist:
+          tags:
+          - MercBorgTorso
+  - type: ContainerContainer
+    containers:
+      part-container: !type:Container
+      cell_slot: !type:Container
+  - type: PartAssembly
+    parts:
+      generic:
+      - MercBorgLArm
+      - MercBorgRArm
+      - MercBorgLLeg
+      - MercBorgRLeg
+      - MercBorgHead
+      - MercBorgTorso
+  - type: Construction
+    graph: MercenaryCyborg
+    node: start
+    defaultTarget: mercenarycyborg
+    containers:
+    - part-container
+    - cell_slot
+  - type: Pullable
+  - type: GuideHelp
+    guides:
+    - Cyborgs
+    - Robotics

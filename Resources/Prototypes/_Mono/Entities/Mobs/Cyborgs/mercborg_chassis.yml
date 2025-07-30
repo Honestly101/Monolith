@@ -1,0 +1,72 @@
+- type: entity
+  id: BorgChassisMercenary
+  parent: BaseBorgChassis
+  name: mercenary assault cyborg
+  description: A lean, mean money making machine with access to a variety of deadly modules.
+  components:
+  - type: Sprite
+    sprite: _Mono/Mobs/Silicon/chassis.rsi
+    layers:
+    - state: merc_sec
+    - state: merc_sec_e
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: merc_sec_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead
+  - type: Damageable
+    damageContainer: Silicon
+    damageModifierSet: BorgChassisMercenary
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Machines/warning_buzzer.ogg
+          params:
+            volume: 5
+    - trigger:
+        !type:DamageTrigger
+         damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:EmptyContainersBehaviour
+        containers:
+        - borg_brain
+        - borg_module
+        - cell_slot
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: BorgChassis
+    maxModules: 5
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+      - BorgModuleMercenary
+    hasMindState: merc_sec_e
+    noMindState: merc_sec
+  - type: ContainerFill
+    containers:
+      borg_module:
+      - BorgModuleTool
+      - BorgModuleMercenary
+  - type: Construction
+    graph: MercenaryCyborg
+    node: mercenarycyborg
+  - type: InteractionPopup
+    interactSuccessString: petting-success-mercenary-cyborg
+    interactFailureString: petting-failure-mercenary-cyborg
+    interactSuccessSound:
+      path: /Audio/Ambience/Objects/periodic_beep.ogg

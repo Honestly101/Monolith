@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/cf45322c7ee16f9d7e43d5260daf24ceb77c1b25",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "merc_sec_l_arm"
+    },
+    {
+      "name": "merc_sec_r_arm"
+    },
+    {
+      "name": "merc_sec_l_leg"
+    },
+    {
+      "name": "merc_sec_r_leg"
+    },
+    {
+      "name": "merc_sec_chest"
+    },
+    {
+      "name": "merc_sec_head"
+    },
+    {
+      "name": "merc_sec_head+o"
+    },
+    {
+      "name": "merc_sec_chest+o"
+    },
+    {
+      "name": "merc_sec_l_arm+o"
+    },
+    {
+      "name": "merc_sec_r_arm+o"
+    },
+    {
+      "name": "merc_sec_l_leg+o"
+    },
+    {
+      "name": "merc_sec_r_leg+o"
+    }
+  ]
+}

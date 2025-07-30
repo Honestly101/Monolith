@@ -327,3 +327,29 @@
 
 - type: Tag
   id: TechDiskMono
+
+# Mercenary Borg
+
+- type: Tag
+  id: MercBorgHead
+
+- type: Tag
+  id: MercBorgTorso
+
+- type: Tag
+  id: MercBorgLArm
+
+- type: Tag
+  id: MercBorgRArm
+
+- type: Tag
+  id: MercBorgLLeg
+
+- type: Tag
+  id: MercBorgRLeg
+
+# Mercenary Module
+
+- type: Tag
+  id: BorgModuleMercenary
+

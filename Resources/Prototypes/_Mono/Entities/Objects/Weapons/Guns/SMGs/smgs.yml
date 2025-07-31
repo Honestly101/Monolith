@@ -170,7 +170,7 @@
     targetedColor: "#FF0000"
     defaultColor: "#FF0000"
 
-# Mercenary Cyborg Vulcan
+# Mercenary Cyborg Vector - Monolith
 - type: entity
   name: LMC Cyborg Vector (.45 ACP)
   parent: [ BaseItem, BaseC2Contraband ]
@@ -208,8 +208,8 @@
     proto: Cartridge45_ACPFMJ
     fireCost: 100
   - type: Battery
-    maxCharge: 3100
-    startingCharge: 3100
+    maxCharge: 3000
+    startingCharge: 3000
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 50

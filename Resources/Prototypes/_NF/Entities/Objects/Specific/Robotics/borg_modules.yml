@@ -51,13 +51,17 @@
 - type: entity
   id: BorgModuleJetpack
   parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: jetpack cyborg module
+  name: EVA cyborg module
   components:
   - type: Sprite
     layers:
     - state: generic
     - state: icon-jetpack
       sprite: _NF/Objects/Specific/Robotics/borgmodule.rsi
+  - type: ItemBorgModule
+    moduleId: NAV #Mono
+    items:
+    - HandHeldMassScannerBorg
   - type: DroppableBorgModule
     moduleId: NFJetpack
     items:

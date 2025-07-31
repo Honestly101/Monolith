@@ -298,7 +298,7 @@
     price: 4000
     vendPrice: 33200
 
-# Mercenary Cyborg Vulcan
+# Mercenary Cyborg Vulcan - Monolith
 - type: entity
   name: FCM-C Cyborg Vulcan (7.62x51mm)
   parent: [ BaseItem, BaseC3Contraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
@@ -331,11 +331,11 @@
     proto: Cartridge7.62x51mmFMJ
     fireCost: 100
   - type: Battery
-    maxCharge: 3100
-    startingCharge: 3100
+    maxCharge: 2000
+    startingCharge: 2000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 50
+    autoRechargeRate: 20
   - type: AmmoCounter
 
 - type: entity

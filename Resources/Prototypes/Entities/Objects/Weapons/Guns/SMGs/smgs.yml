@@ -262,7 +262,6 @@
     - type: PirateBountyItem # Mono
       id: StandardFactionLongarm
 
-
 - type: entity
   name: UI WT550 (4.6x30mm)
   parent: [ BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable

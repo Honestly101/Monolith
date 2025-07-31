@@ -2,7 +2,7 @@
   id: BorgChassisMercenary
   parent: BaseBorgChassis
   name: mercenary assault cyborg
-  description: A lean, mean money making machine with access to a variety of deadly modules.
+  description: A lean, mean, bullet making machine with access to a variety of deadly modules.
   components:
   - type: Sprite
     sprite: _Mono/Mobs/Silicon/chassis.rsi
@@ -57,11 +57,6 @@
       - BorgModuleMercenary
     hasMindState: merc_sec_e
     noMindState: merc_sec
-  - type: ContainerFill
-    containers:
-      borg_module:
-      - BorgModuleTool
-      - BorgModuleMercenary
   - type: Construction
     graph: MercenaryCyborg
     node: mercenarycyborg
@@ -70,3 +65,21 @@
     interactFailureString: petting-failure-mercenary-cyborg
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
+
+- type: entity
+  id: BorgChassisMercenaryBattery
+  parent: BorgChassisMercenary
+  suffix: Battery, Module
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+        - PositronicBrain
+      borg_module:
+      - BorgModuleTool
+      - BorgModuleMercenary
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHyper

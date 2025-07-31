@@ -12,7 +12,7 @@
         guideString: borg-construction-guide-string
 
       - material: Cable
-        amount: 1
+        amount: 5
         doAfter: 1
         store: part-container
 

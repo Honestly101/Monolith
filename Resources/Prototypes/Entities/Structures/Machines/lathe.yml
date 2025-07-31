@@ -539,6 +539,8 @@
     - S2Mechs
     - SpaceMechaWeapons
     - SpaceMechaIFF
+    # Mono - MercBorg
+    - MercRobotics
   - type: MaterialStorage
     whitelist:
       tags:

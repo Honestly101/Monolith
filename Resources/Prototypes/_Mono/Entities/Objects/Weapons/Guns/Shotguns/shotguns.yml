@@ -73,7 +73,7 @@
     targetedColor: "#FF0000"
     defaultColor: "#FF0000"
 
-# Mercenary Cyborg Big Johnny
+# Mercenary Cyborg Big Johnny - Monolith
 - type: entity
   name: Cyborg Big Johnny (4 gauge)
   parent: [ BaseItem, BaseC1Contraband ]

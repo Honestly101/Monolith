@@ -298,7 +298,7 @@
     Plastic: 500
     Gold: 300
     Silver: 300
-    
+
 - type: latheRecipe
   id: DexLeftHand
   result: DexLeftHand

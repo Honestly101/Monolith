@@ -259,7 +259,7 @@
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBeanbag
 
-# Mercenary Cyborg Enforcer
+# Mercenary Cyborg Enforcer - Monolith
 - type: entity
   name: Cyborg Enforcer (12 gauge)
   parent: [ BaseItem, BaseC2Contraband ]
@@ -292,7 +292,7 @@
     startingCharge: 800
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 25
+    autoRechargeRate: 20
   - type: AmmoCounter
 
 - type: entity

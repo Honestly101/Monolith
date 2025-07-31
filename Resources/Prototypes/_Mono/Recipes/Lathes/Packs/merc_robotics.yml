@@ -1,0 +1,24 @@
+## Dynamic
+
+- type: latheRecipePack
+  id: MercBorgModules
+  recipes:
+  - BorgModuleVulcan
+  - BorgModuleEnforcer
+  - BorgModuleBigJohnny
+  - BorgModuleVector
+  - BorgModuleBreacher
+  - BorgModuleChinaLake
+
+- type: latheRecipePack
+  id: MercRobotics
+  recipes:
+  - MercenaryCyborgEndoskeleton
+  - LeftArmMercBorg
+  - RightArmMercBorg
+  - LeftLegMercBorg
+  - RightLegMercBorg
+  - HeadMercBorg
+  - TorsoMercBorg
+
+

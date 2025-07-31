@@ -226,6 +226,8 @@
     - MonoUSSPWeaponsDynamicRanged
     - MonoUSSPAmmo
     - UniversalShellAmmo
+    # Mono - MercBorg
+    - MercBorgModules
     # Mono end
   - type: EmagLatheRecipes
     emagStaticPacks:

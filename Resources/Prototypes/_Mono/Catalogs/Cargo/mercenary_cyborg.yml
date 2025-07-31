@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MercenaryCyborgImport
+  icon:
+    sprite: _Mono/Mobs/Silicon/chassis.rsi
+    state: merc_sec
+  product: BorgChassisMercenaryBattery
+  cost: 85000
+  category: cargoproduct-category-name-armory
+  group: market

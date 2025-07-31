@@ -1,0 +1,19 @@
+- type: technology
+  id: MercenaryCyborg
+  name: research-technology-mercenary-cyborg
+  icon:
+    sprite: _Mono/Mobs/Silicon/chassis.rsi
+    state: merc_sec
+  discipline: Arsenal
+  tier: 1
+  cost: 12000
+  recipeUnlocks:
+  - MercenaryCyborgEndoskeleton
+  - LeftArmMercBorg
+  - RightArmMercBorg
+  - LeftLegMercBorg
+  - RightLegMercBorg
+  - HeadMercBorg
+  - TorsoMercBorg
+  technologyPrerequisites:
+  - BasicRobotics

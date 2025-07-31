@@ -23,6 +23,8 @@
     - TechDiskCivCTLA50
     - TechDiskCivShipComps
     - TechDiskCivBackpackWaterTank
+    - TechDiskMercBorgBasic
+    - TechDiskMercBorgAdvanced
     chance: 1
     offset: 0.0
     rarePrototypes:
@@ -30,6 +32,7 @@
     - SpawnLootTechDisksT2Mech
     - TechDiskCivMicroreactors
     - TechDiskCivAdvancedTools
+    - TechDiskMercBorgHyperAdvanced
     rareChance: 0.3
 
 - type: entity

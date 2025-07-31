@@ -93,7 +93,7 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
 
-# Mercenary Cyborg China Lake
+# Mercenary Cyborg China Lake - Monolith
 - type: entity
   name: PA Cyborg china lake
   parent: [ BaseItem, BaseC3Contraband ]
@@ -120,10 +120,10 @@
     fireCost: 100
   - type: Battery
     maxCharge: 300
-    startingCharge: 300
+    startingCharge: 0
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 1
+    autoRechargeRate: 3
   - type: AmmoCounter
 
 - type: entity

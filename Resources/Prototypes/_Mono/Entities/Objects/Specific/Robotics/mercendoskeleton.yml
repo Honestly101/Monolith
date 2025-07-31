@@ -1,3 +1,12 @@
+# SPDX-FileCopyrightText: 2023 M3739
+# SPDX-FileCopyrightText: 2023 Nemanja
+# SPDX-FileCopyrightText: 2024 Ian
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
+# SPDX-FileCopyrightText: 2025 Honestly101
+# SPDX-FileCopyrightText: 2025 starch
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   id: MercenaryCyborgEndoskeleton
   name: mercenary cyborg endoskeleton

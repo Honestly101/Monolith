@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Honestly101
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 # DO NOT use this as an actual species, its for borg part appearance to Just Work
 - type: species
   id: MercenaryCyborg

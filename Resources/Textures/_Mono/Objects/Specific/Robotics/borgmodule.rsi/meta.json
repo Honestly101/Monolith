@@ -1,6 +1,8 @@
     {
     "version": 1,
     "size": {
+    "license": "CC0-1.0",
+    "copyright": "Created by Honestly101 (Github) for Monolith.",
         "x": 32,
         "y": 32
     },

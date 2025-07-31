@@ -214,6 +214,3 @@
     autoRecharge: true
     autoRechargeRate: 50
   - type: AmmoCounter
-  - type: LaserPointer
-    targetedColor: "#FF0000"
-    defaultColor: "#FF0000"

@@ -123,7 +123,7 @@
     startingCharge: 0
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 3
+    autoRechargeRate: 1
   - type: AmmoCounter
 
 - type: entity

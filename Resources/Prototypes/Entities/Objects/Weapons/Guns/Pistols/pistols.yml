@@ -192,9 +192,10 @@
     autoRechargeRate: 25
   - type: AmmoCounter
 
+# Mercenary Cyborg Echis
 - type: entity
   name: LWC mercenary PT-45C echis (9x19mm)
-  parent: [ BaseItem, BaseC1Contraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [ BaseItem, BaseC1Contraband ]
   id: WeaponPistolMercenaryEchis
   description: A viper for use by cyborgs, redesigned for mercenary use. Creates 9x19mm on the fly from an internal ammo fabricator, which slowly self-charges.
   components:

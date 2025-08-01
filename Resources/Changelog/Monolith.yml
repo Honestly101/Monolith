@@ -9373,3 +9373,129 @@ Entries:
   id: 1045
   time: '2025-07-30T23:20:01.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/1685
+- author: starch70
+  changes:
+    - type: Remove
+      message: >-
+        Removed the hyperlink from SOP and Space Law books until someone can
+        write better ones (nerd). No more stupid NFSD misinformation sir.
+  id: 1046
+  time: '2025-07-30T23:36:09.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1699
+- author: starch70
+  changes:
+    - type: Add
+      message: M82 helmet now gets NVGs.
+  id: 1047
+  time: '2025-07-30T23:54:02.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1700
+- author: Honestly101
+  changes:
+    - type: Add
+      message: Adds the USSP Destroyer Sulak
+  id: 1048
+  time: '2025-07-31T00:42:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1703
+- author: BoskiYourk
+  changes:
+    - type: Add
+      message: >-
+        Added the Ledokol to the USSP shipyard. Have fun in Hyperwar Heaven,
+        comrades!
+  id: 1049
+  time: '2025-07-31T00:56:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1684
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: Observer mass scanner range increased
+  id: 1050
+  time: '2025-07-31T14:25:10.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1704
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Improved UI of bank ATMs, gas canisters, and vending machines, APCs,
+        gunnery control consoles, and loadout options.
+  id: 1051
+  time: '2025-07-31T14:41:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1707
+- author: starch70
+  changes:
+    - type: Add
+      message: >-
+        Added more lathe categories (incen ammo, rifles, smgs, combat EVA, etc).
+        Bloat Supreme.
+    - type: Tweak
+      message: Updated visuals of lathe UI.
+  id: 1052
+  time: '2025-07-31T20:04:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1706
+- author: Rubeebeebee
+  changes:
+    - type: Add
+      message: 'SEC-Parabellum, a security guard patrol boat '
+  id: 1053
+  time: '2025-07-31T20:08:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1560
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: >-
+        Shipgun ranges reworked to not be able to offscreen people for the most
+        part. Guidebook updated.
+  id: 1054
+  time: '2025-07-31T20:17:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1658
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Gatfruit and capfruit can be swabbed, seeded, and clipped again. Bees
+        can now be swabbed. 
+  id: 1055
+  time: '2025-07-31T20:32:39.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1712
+- author: Onezero0
+  changes:
+    - type: Add
+      message: >-
+        Added the light munitions bay and three types of ordinance for it.
+        Fighter mappers rejoice!
+  id: 1056
+  time: '2025-07-31T21:30:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1698
+- author: starch70
+  changes:
+    - type: Tweak
+      message: >-
+        Higher tier tech disks should be rarer in Sevastopol's printer now.
+        Point disks can also be printed now. Sevastopol moved to be 3.5km-7.5km
+        from 0,0
+  id: 1057
+  time: '2025-07-31T21:57:55.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1714
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Volumetric pumps (including scrubbers) set back to their default rate:
+        they were kneecapped by 4x.
+  id: 1058
+  time: '2025-08-01T02:08:23.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1720
+- author: AwareFoxy
+  changes:
+    - type: Add
+      message: Added execution room to halcyon
+  id: 1059
+  time: '2025-08-01T15:32:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1730
+- author: starch70
+  changes:
+    - type: Fix
+      message: Fixed 8x65mm having full instead of partial AP.
+  id: 1060
+  time: '2025-08-01T23:31:11.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/1733

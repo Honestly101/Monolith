@@ -44,19 +44,6 @@
     Plastic: 500
     Gold: 300
 
-- type: latheRecipe
-  abstract: true
-  parent: BaseMercBorgModuleRecipe
-  id: BaseHyperAdvancedMercBorgModuleRecipe
-  materials:
-    Steel: 5000
-    Plasteel: 2500
-    Glass: 5000
-    Plastic: 2000
-    Gold: 1000
-    Silver: 1000
-    Diamond: 400
-
 # Mercborg Parts
 
 - type: latheRecipe

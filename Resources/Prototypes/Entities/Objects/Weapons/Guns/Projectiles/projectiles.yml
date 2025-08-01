@@ -847,6 +847,9 @@
       - state: grenade
   - type: FlashOnTrigger
     range: 7
+  - type: SoundOnTrigger
+    sound:
+      path: "/Audio/Effects/flash_bang.ogg"
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: ActiveTimerTrigger

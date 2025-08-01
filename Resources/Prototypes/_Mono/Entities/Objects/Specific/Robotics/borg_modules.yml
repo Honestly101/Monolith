@@ -95,25 +95,10 @@
     icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: vector-weapon-module }
 
 - type: entity
-  id: BorgModuleChinaLake
-  parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
-  name:  china lake cyborg module
-  components:
-  - type: Sprite
-    layers:
-    - state: mercenary
-    - state: icon-mercenary
-  - type: ItemBorgModule
-    moduleId: ChinaLake
-    items:
-    - WeaponMercenaryChinaLake
-  - type: BorgModuleIcon
-    icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: chinalake-weapon-module }
-
-- type: entity
   id: BorgModuleBreacher
   parent: [ BaseBorgModuleMercenary, BaseProviderBorgModule ]
   name:  breacher cyborg module
+  description: Includes a redesigned cyborg breaching hammer and flash grenade launcher.
   components:
   - type: Sprite
     layers:
@@ -123,5 +108,6 @@
     moduleId: Breacher
     items:
     - CyborgBreachingHammer
+    - WeaponMercenaryBreachLauncher
   - type: BorgModuleIcon
     icon: { sprite: _Mono/Interface/Actions/actions_borg.rsi, state: breacher-weapon-module }

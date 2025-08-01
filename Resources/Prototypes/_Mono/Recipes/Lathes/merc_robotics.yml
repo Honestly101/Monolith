@@ -126,10 +126,3 @@
   parent: BaseAdvancedMercBorgModuleRecipe
   id: BorgModuleBreacher
   result: BorgModuleBreacher
-
-# Hyper Advanced Mercborg Modules
-
-- type: latheRecipe
-  parent: BaseHyperAdvancedMercBorgModuleRecipe
-  id: BorgModuleChinaLake
-  result: BorgModuleChinaLake

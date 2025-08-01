@@ -31,6 +31,6 @@
     Heat: 1.5
     Cold: 0
     Shock: 2.5
-    Blunt: 0.5
-    Slash: 0.6
-    Piercing: 0.6
+    Blunt: 0.65
+    Slash: 0.75
+    Piercing: 0.75

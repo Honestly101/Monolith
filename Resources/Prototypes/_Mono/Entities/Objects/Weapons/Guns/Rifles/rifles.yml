@@ -269,8 +269,8 @@
   - type: Gun
     minAngle: 1
     maxAngle: 2
-    angleIncrease: 1.4
-    angleDecay: 24
+    angleIncrease: 5
+    angleDecay: 25
     fireRate: 4 #240 RPM, its semi-auto anyway
     projectileSpeed: 55 # Mono
     selectedMode: SemiAuto

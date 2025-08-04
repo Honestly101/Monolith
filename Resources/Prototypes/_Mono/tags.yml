@@ -358,8 +358,3 @@
 
 - type: Tag
   id: BorgModuleMercenary
-
-# survival kit
-
-- type: Tag
-  id: SurvivalBox

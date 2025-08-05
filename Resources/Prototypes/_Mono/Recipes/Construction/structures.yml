@@ -20,7 +20,7 @@
   canBuildInImpassable: false
   conditions:
     - !type:TileNotBlocked
-    
+
 - type: construction
   name: diagonal reinforced wall
   id: wallReinforcedDiagonal
@@ -74,3 +74,41 @@
     state: uranium_reinforced_window
   objectType: Structure
   placementMode: SnapgridCenter
+
+# plasturanium wall
+
+- type: construction
+  name: plasturanium wall
+  id: wallPlasturanium
+  graph: Girder
+  startNode: start
+  targetNode: wallPlastUranium
+  category: construction-category-structures
+  description: Keeps the air in and the greytide out.
+  icon:
+    sprite: _Mono/Structures/Walls/uraplast.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: diagonal plasturanium wall
+  id: wallPlasturaniumDiagonal
+  graph: Girder
+  startNode: start
+  targetNode: wallplasturaniumDiagonal
+  category: construction-category-structures
+  description: Keeps the air in and the greytide out.
+  icon:
+    sprite: _Mono/Structures/Walls/uraplast_diagonal.rsi
+    state: state0
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

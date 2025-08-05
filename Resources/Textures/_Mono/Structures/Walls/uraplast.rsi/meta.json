@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by KREKS, Edited by Honestly101",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "full"
+      },
+      {
+        "name": "uraplast0",
+        "directions": 4
+      },
+      {
+        "name": "uraplast1",
+        "directions": 4
+      },
+      {
+        "name": "uraplast2",
+        "directions": 4
+      },
+      {
+        "name": "uraplast3",
+        "directions": 4
+      },
+      {
+        "name": "uraplast4",
+        "directions": 4
+      },
+      {
+        "name": "uraplast5",
+        "directions": 4
+      },
+      {
+        "name": "uraplast6",
+        "directions": 4
+      },
+      {
+        "name": "uraplast7",
+        "directions": 4
+      }
+    ]
+  }
+  

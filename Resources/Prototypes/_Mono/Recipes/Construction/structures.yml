@@ -83,7 +83,7 @@
   id: wallPlasturanium
   graph: Girder
   startNode: start
-  targetNode: wallPlastUranium
+  targetNode: plasturaniumWall
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:
@@ -101,7 +101,7 @@
   id: wallPlasturaniumDiagonal
   graph: Girder
   startNode: start
-  targetNode: wallplasturaniumDiagonal
+  targetNode: plasturaniumWallDiagonal
   category: construction-category-structures
   description: Keeps the air in and the greytide out.
   icon:

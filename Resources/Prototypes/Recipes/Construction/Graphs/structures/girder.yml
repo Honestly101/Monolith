@@ -342,7 +342,7 @@
               doAfter: 1
 
         #Mono - create plasturanium wall
-        - to: wallPlastUranium
+        - to: plasturaniumWall
           completed:
             - !type:SnapToGrid
               southRotation: true
@@ -356,7 +356,7 @@
               doAfter: 1
 
         #Mono - create plasturanium wall diagonal
-        - to: wallplasturaniumDiagonal
+        - to: plasturaniumWallDiagonal
           completed:
             - !type:SnapToGrid
               southRotation: false
@@ -622,7 +622,7 @@
               doAfter: 5
 
     #Mono - deconstruct plasturanium wall
-    - node: wallPlastUranium
+    - node: plasturaniumWall
       entity: WallPlasturanium
       edges:
         - to: reinforcedGirder
@@ -649,8 +649,9 @@
               doAfter: 1
             - tool: Cutting
               doAfter: 1
+
     #Mono - deconstruct plasturanium wall diagonal
-    - node: wallplasturaniumDiagonal
+    - node: plasturaniumWallDiagonal
       entity: WallPlasturaniumDiagonal
       edges:
         - to: reinforcedGirder

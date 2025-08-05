@@ -78,6 +78,14 @@
     Glass: 900
 
 - type: latheRecipe
+  id: ThrusterUSSPMachineCircuitboard
+  parent: BaseCircuitboardRecipe
+  result: ThrusterUSSPMachineCircuitboard
+  materials:
+    Steel: 400
+    Glass: 900
+
+- type: latheRecipe
   id: SmallThrusterMachineCircuitboard
   parent: BaseCircuitboardRecipe
   result: SmallThrusterMachineCircuitboard

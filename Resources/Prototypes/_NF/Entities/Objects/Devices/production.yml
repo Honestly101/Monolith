@@ -123,6 +123,18 @@
       Steel: 5
 
 - type: entity
+  id: ThrusterUSSPMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: USSP thruster machine board
+  components:
+  - type: MachineBoard
+    prototype: ThrusterUSSP
+    requirements:
+      Capacitor: 3
+    stackRequirements:
+      Steel: 5
+
+- type: entity
   id: SmallThrusterMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: small thruster machine board

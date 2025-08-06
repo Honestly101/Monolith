@@ -229,11 +229,15 @@
   - type: Construction
     graph: Girder
     node: plasturaniumWallDiagonal
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 4000
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4000
+        damage: 3000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -242,7 +246,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 3000
+        damage: 2000
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder

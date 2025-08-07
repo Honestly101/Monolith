@@ -67,6 +67,7 @@
     - TechDiskBulldog
     - TechDiskHristov
     - SpawnLootTechDisksT3Fracture
+    - TechDiskUniversalShipAmmoAdvanced
     rareChance: 0.15
 
 - type: entity

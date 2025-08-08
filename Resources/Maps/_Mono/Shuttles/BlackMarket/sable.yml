@@ -9,7 +9,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/26/2025 11:59:36
+  time: 08/08/2025 14:53:56
   entityCount: 44
 maps: []
 grids:
@@ -97,6 +97,44 @@ entities:
     - type: GridAtmosphere
       version: 2
       data:
+        tiles:
+          0,0:
+            0: 3
+            1: 48
+          0,-1:
+            0: 12592
+            1: 3
+        uniqueMixes:
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          immutable: True
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: ShipGridLock
@@ -341,30 +379,30 @@ entities:
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 1
-- proto: ThrusterSecurity
+- proto: ThrusterRogue
   entities:
   - uid: 37
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,1.5
-      parent: 1
-  - uid: 38
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 0.5,-3.5
       parent: 1
+  - uid: 38
+    components:
+    - type: Transform
+      pos: 0.5,1.5
+      parent: 1
   - uid: 39
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 1.5,-3.5
+      rot: -1.5707963267948966 rad
+      pos: 1.5,1.5
       parent: 1
   - uid: 40
     components:
     - type: Transform
-      pos: 0.5,1.5
+      rot: 3.141592653589793 rad
+      pos: 1.5,-3.5
       parent: 1
 - proto: WallPlastitanium
   entities:

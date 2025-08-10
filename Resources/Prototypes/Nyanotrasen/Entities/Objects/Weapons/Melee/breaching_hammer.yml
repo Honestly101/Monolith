@@ -3,8 +3,9 @@
 # SPDX-FileCopyrightText: 2024 Whatstone
 # SPDX-FileCopyrightText: 2024 checkraze
 # SPDX-FileCopyrightText: 2025 Blu
-# SPDX-FileCopyrightText: 2025 Ghost581
 # SPDX-FileCopyrightText: 2025 Honestly101
+# SPDX-FileCopyrightText: 2025 Coenx-flex
+# SPDX-FileCopyrightText: 2025 Ghost581
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
@@ -37,6 +38,9 @@
   - type: Tool
     qualities:
       - Prying
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Prying
   - type: ToolTileCompatible
   - type: Clothing
     sprite: Nyanotrasen/Objects/Weapons/Melee/breaching_hammer.rsi

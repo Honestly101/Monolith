@@ -17,7 +17,6 @@
 # SPDX-FileCopyrightText: 2024 Mr. Samuel
 # SPDX-FileCopyrightText: 2025 Alice "Arimah" Heurlin
 # SPDX-FileCopyrightText: 2025 Checkraze
-# SPDX-FileCopyrightText: 2025 Honestly101
 # SPDX-FileCopyrightText: 2025 RikuTheKiller
 # SPDX-FileCopyrightText: 2025 starch
 #
@@ -26,10 +25,10 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 264.0.0
+  engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 08/08/2025 14:42:02
+  time: 07/20/2025 23:29:50
   entityCount: 907
 maps: []
 grids:
@@ -4687,7 +4686,7 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -7.5,-34.5
+      pos: -5.5,-32.5
       parent: 1
   - uid: 653
     components:
@@ -4705,13 +4704,13 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -5.5,-32.5
+      pos: -7.5,-34.5
       parent: 1
   - uid: 656
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -9.5,-28.5
+      pos: -9.5,-30.5
       parent: 1
   - uid: 657
     components:
@@ -4723,27 +4722,27 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -9.5,-30.5
+      pos: -9.5,-28.5
       parent: 1
   - uid: 659
     components:
     - type: Transform
-      pos: 2.5,-4.5
+      pos: 3.5,-8.5
       parent: 1
   - uid: 660
     components:
     - type: Transform
-      pos: -3.5,-4.5
+      pos: 2.5,-4.5
       parent: 1
   - uid: 661
     components:
     - type: Transform
-      pos: -4.5,-8.5
+      pos: -3.5,-4.5
       parent: 1
   - uid: 662
     components:
     - type: Transform
-      pos: 3.5,-8.5
+      pos: -4.5,-8.5
       parent: 1
 - proto: VendingMachineTankDispenserEVA
   entities:

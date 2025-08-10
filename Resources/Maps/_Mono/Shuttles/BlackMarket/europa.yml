@@ -21,7 +21,6 @@
 # SPDX-FileCopyrightText: 2024 Pieter-Jan Briers
 # SPDX-FileCopyrightText: 2024 Rainfey
 # SPDX-FileCopyrightText: 2025 Ark
-# SPDX-FileCopyrightText: 2025 Honestly101
 # SPDX-FileCopyrightText: 2025 Redrover1760
 # SPDX-FileCopyrightText: 2025 RikuTheKiller
 # SPDX-FileCopyrightText: 2025 starch
@@ -31,10 +30,10 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 264.0.0
+  engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 08/08/2025 14:47:15
+  time: 07/20/2025 06:19:23
   entityCount: 1285
 maps: []
 grids:
@@ -4363,15 +4362,6 @@ entities:
       parent: 1
 - proto: ComputerAdvancedRadar
   entities:
-  - uid: 598
-    components:
-    - type: Transform
-      pos: -1.5,-8.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
   - uid: 1272
     components:
     - type: Transform
@@ -4398,6 +4388,17 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-8.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+- proto: ComputerAdvancedRadar
+  entities:
+  - uid: 598
+    components:
+    - type: Transform
+      pos: -1.5,-8.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -6990,65 +6991,65 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -1.5,-26.5
+      pos: 0.5,-26.5
       parent: 1
   - uid: 927
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -2.5,-26.5
+      pos: -0.5,-26.5
       parent: 1
   - uid: 928
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -6.5,-16.5
+      rot: 3.141592653589793 rad
+      pos: -1.5,-26.5
       parent: 1
   - uid: 929
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -6.5,-15.5
+      rot: 3.141592653589793 rad
+      pos: -2.5,-26.5
       parent: 1
   - uid: 930
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: -0.5,-26.5
+      pos: 1.5,-26.5
       parent: 1
   - uid: 931
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,-16.5
+      rot: 1.5707963267948966 rad
+      pos: -6.5,-16.5
       parent: 1
   - uid: 932
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -6.5,-15.5
+      parent: 1
+  - uid: 933
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 5.5,-15.5
       parent: 1
-  - uid: 933
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 1.5,-26.5
-      parent: 1
   - uid: 934
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 0.5,-26.5
+      rot: -1.5707963267948966 rad
+      pos: 5.5,-16.5
       parent: 1
   - uid: 935
     components:
     - type: Transform
-      pos: -3.5,7.5
+      pos: 2.5,7.5
       parent: 1
   - uid: 936
     components:
     - type: Transform
-      pos: 2.5,7.5
+      pos: 3.5,7.5
       parent: 1
   - uid: 937
     components:
@@ -7058,7 +7059,7 @@ entities:
   - uid: 938
     components:
     - type: Transform
-      pos: 3.5,7.5
+      pos: -3.5,7.5
       parent: 1
 - proto: VendingMachineTankDispenserEVA
   entities:

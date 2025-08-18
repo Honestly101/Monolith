@@ -28,8 +28,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/18/2025 12:30:46
-  entityCount: 4809
+  time: 08/18/2025 12:46:52
+  entityCount: 4810
 maps: []
 grids:
 - 1
@@ -205,6 +205,11 @@ entities:
       chunkCollection:
         version: 2
         nodes:
+        - node:
+            color: '#FFFFFFFF'
+            id: Arrows
+          decals:
+            1392: 0,-5
         - node:
             color: '#FFFFFFFF'
             id: Bot
@@ -594,6 +599,7 @@ entities:
           decals:
             104: 2,7
             733: 19,23
+            1389: 0,-5
         - node:
             color: '#D69949FF'
             id: BrickTileSteelCornerNw
@@ -632,6 +638,11 @@ entities:
             80: 12,6
         - node:
             color: '#FFFFFFFF'
+            id: BrickTileSteelEndS
+          decals:
+            1390: 0,-6
+        - node:
+            color: '#FFFFFFFF'
             id: BrickTileSteelEndW
           decals:
             77: 3,6
@@ -656,6 +667,11 @@ entities:
             id: BrickTileSteelInnerSw
           decals:
             349: -17,11
+        - node:
+            color: '#FFFFFFFF'
+            id: BrickTileSteelInnerSw
+          decals:
+            1391: 0,-5
         - node:
             color: '#52B4E9FF'
             id: BrickTileSteelLineE
@@ -685,6 +701,7 @@ entities:
             83: 5,6
             84: 4,6
             739: 18,23
+            1384: -1,-5
         - node:
             color: '#52B4E9FF'
             id: BrickTileSteelLineS
@@ -701,6 +718,7 @@ entities:
             75: 10,6
             76: 11,6
             738: 18,21
+            1385: -1,-5
         - node:
             color: '#52B4E9FF'
             id: BrickTileSteelLineW
@@ -1346,6 +1364,24 @@ entities:
           decals:
             281: -20,15
         - node:
+            color: '#BE6BC3FF'
+            id: TrimWarnEast
+          decals:
+            1397: 6,2
+            1398: 6,1
+        - node:
+            color: '#BE6BC3FF'
+            id: TrimWarnSouth
+          decals:
+            1393: 2,0
+            1394: 8,0
+        - node:
+            color: '#BE6BC3FF'
+            id: TrimWarnWest
+          decals:
+            1395: 4,2
+            1396: 4,1
+        - node:
             color: '#52B4E996'
             id: TrimlineEast
           decals:
@@ -1848,8 +1884,7 @@ entities:
           -1,2:
             0: 36590
           0,-1:
-            0: 61132
-            6: 1
+            0: 61133
           1,1:
             0: 65399
           1,2:
@@ -1934,7 +1969,7 @@ entities:
             0: 1024
           8,3:
             0: 7
-            7: 8
+            6: 8
           5,5:
             0: 57308
           5,6:
@@ -2152,21 +2187,6 @@ entities:
           moles:
           - 27.225372
           - 102.419266
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14996
-          moles:
-          - 21.824879
-          - 82.10312
           - 0
           - 0
           - 0
@@ -2663,7 +2683,7 @@ entities:
       pos: -8.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4455.745
+      secondsUntilStateChange: -4872.5464
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2721,7 +2741,7 @@ entities:
       pos: 3.5,17.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4146.712
+      secondsUntilStateChange: -4563.513
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2813,7 +2833,7 @@ entities:
       pos: -9.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4452.7783
+      secondsUntilStateChange: -4869.5796
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2854,7 +2874,7 @@ entities:
       pos: -4.5,14.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4002.6787
+      secondsUntilStateChange: -4419.48
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2885,17 +2905,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 12.5,17.5
       parent: 1
-  - uid: 608
-    components:
-    - type: Transform
-      pos: 2.5,0.5
-      parent: 1
-  - uid: 1411
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 8.5,0.5
-      parent: 1
   - uid: 2751
     components:
     - type: Transform
@@ -2919,6 +2928,18 @@ entities:
     components:
     - type: Transform
       pos: 15.5,30.5
+      parent: 1
+- proto: AirlockScienceGlass
+  entities:
+  - uid: 608
+    components:
+    - type: Transform
+      pos: 2.5,0.5
+      parent: 1
+  - uid: 1411
+    components:
+    - type: Transform
+      pos: 8.5,0.5
       parent: 1
 - proto: AirlockShuttleSyndicateRogueLocked
   entities:
@@ -11845,6 +11866,13 @@ entities:
     components:
     - type: Transform
       pos: -19.5,9.5
+      parent: 1
+- proto: DefaultStationBeaconRND
+  entities:
+  - uid: 2916
+    components:
+    - type: Transform
+      pos: 5.5,-1.5
       parent: 1
 - proto: DefaultStationBeaconServerRoom
   entities:
@@ -21129,7 +21157,7 @@ entities:
       pos: -18.5,16.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4095.4297589
+      nextAdvertisementTime: 744.999799
 - proto: SMESAdvanced
   entities:
   - uid: 3078
@@ -21905,7 +21933,7 @@ entities:
       pos: 10.5,15.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4399.4627472
+      nextAdvertisementTime: 911.999577
 - proto: VendingMachineAstroVendPOI
   entities:
   - uid: 3213
@@ -21914,7 +21942,7 @@ entities:
       pos: 9.5,15.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 3991.4299129
+      nextAdvertisementTime: 557.9912799
 - proto: VendingMachineBooze
   entities:
   - uid: 3214
@@ -21923,7 +21951,7 @@ entities:
       pos: 18.5,30.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4060.4297969
+      nextAdvertisementTime: 935.999552
 - proto: VendingMachineChefvend
   entities:
   - uid: 3215
@@ -21932,7 +21960,7 @@ entities:
       pos: 17.5,20.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4030.4298149
+      nextAdvertisementTime: 805.999767
 - proto: VendingMachineCiviMedPlus
   entities:
   - uid: 3216
@@ -21941,7 +21969,7 @@ entities:
       pos: -20.5,11.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4130.4297369
+      nextAdvertisementTime: 984.999518
 - proto: VendingMachineDinnerware
   entities:
   - uid: 3217
@@ -21950,7 +21978,7 @@ entities:
       pos: 16.5,20.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4310.4628902
+      nextAdvertisementTime: 933.999601
 - proto: VendingMachineEngivend
   entities:
   - uid: 3218
@@ -21966,14 +21994,14 @@ entities:
       pos: 11.5,15.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4147.4296759
+      nextAdvertisementTime: 695.9912799
   - uid: 3220
     components:
     - type: Transform
       pos: -10.5,23.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4219.4296979
+      nextAdvertisementTime: 585.9912799
 - proto: VendingMachineNutri
   entities:
   - uid: 3221
@@ -21982,7 +22010,7 @@ entities:
       pos: 26.5,18.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4505.4627472
+      nextAdvertisementTime: 1052.999537
 - proto: VendingMachineRestockSeeds
   entities:
   - uid: 3222
@@ -22003,7 +22031,7 @@ entities:
       pos: 26.5,19.5
       parent: 1
     - type: Advertise
-      nextAdvertisementTime: 4078.3964936
+      nextAdvertisementTime: 1030.999525
 - proto: VendingMachineTankDispenserEVAPOI
   entities:
   - uid: 3225
